@@ -1,0 +1,4 @@
+  /* --- PhotosPage --- */
+ 
+  #Photo { margin:0 1px}
+  #Photo a.back { display:block; width:50px; float:right; text-align:right; }
