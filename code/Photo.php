@@ -19,4 +19,11 @@ class Photo extends DataObject
    		return $fields;
 	}
 	
+	public function onBeforeWrite() {
+		if (empty($this->Name)) {
+			$this->Name = $this->PhotosPage()->Title;
+		}	
+		parent::onBeforeWrite(); 
+	}
+	
 }
