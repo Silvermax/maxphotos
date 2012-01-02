@@ -1,13 +1,25 @@
-<% require themedCSS(photospage) %>
-<h1>$Title</h1>
-<div id="Photo" class="floatbox">
-	<% control Photos %>
-		<div class="photo">
-			<a href="$PhotoImage.Link" rel="floatbox.photos" title="$Name">
-				$PhotoImage.PhotoThumb
-			</a>
+<% require themedCSS(PhotosPage) %>
+<% require themedCSS(customPhotosPage) %>
+<div id="PhotosPage">
+	<h1>$Breadcrumbs</h1>
+	$Content
+	<% if Children %>
+		<div class="PhotosPageHolder">
+			<% control Children %>
+				<% include PhotosPageOnHolder %>
+			<% end_control %>
 		</div>
-	<% end_control %>
-	<div id="photo_content">$Content</div>
-	<a href="$Parent.Link" class="back" title="Späť"><em class="uvodzovky">« </em>Späť</a>
+	<% else %>
+		<% if Photos %>
+			<div class="Photos">
+				<% control allPhotos %>
+					<% include PhotoItem %>
+				<% end_control %>
+			</div>
+		<% else %>
+			<div class="NoPhotos">
+				<p class="warning"><% _t("PhotosPage.NOPHOTOS", "No photos available on this Page") %></p>
+			</div>
+		<% end_if %>
+	<% end_if %>
 </div>
