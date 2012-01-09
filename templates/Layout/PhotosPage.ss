@@ -10,7 +10,7 @@
 			<% end_control %>
 		</div>
 	<% else %>
-		<% if Photos %>
+		<% if allPhotos %>
 			<div class="Photos">
 				<% control allPhotos %>
 					<% include PhotoItem %>
