@@ -1,0 +1,6 @@
+---
+Name: maxphotos-extensions
+---
+MaxPhotosPage:
+  extensions:
+    - MaxPhotosPageExtension

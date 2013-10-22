@@ -1,0 +1,21 @@
+{
+	"name": "silvermax/maxphotos",
+	"description": "Simple gallery page for SilverStripe 3",
+	"type": "silverstripe-module",
+	"license": "BSD-3-Clause",
+	"keywords": ["silverstripe", "gallery", "photos"],
+	"authors": [
+	{
+		"name": "Pali Ondras",
+		"email": "pali@silvermax.sk"
+	}
+	],
+	"require":
+	{
+		"silverstripe/framework": "3.1.*",
+		"silverstripe/cms": "3.1.*",
+		"colymba/gridfield-bulk-editing-tools": "*",
+		"colymba/gridfield-gallery-theme": "*",
+		"undefinedoffset/sortablegridfield": "*"
+	}
+}
