@@ -8,5 +8,5 @@
 				</li>
 			<% end_loop %>
 		</ul>
-		$addEffect("fancyBox","gallery")
+		$addEffect("fancybox","gallery")
 <% end_if %>
